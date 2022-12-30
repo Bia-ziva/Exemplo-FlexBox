@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #696969;
+    font-family: 'Dancing Script', cursive;
+}
+
+#wrap{
+    width: 85%;
+    margin: auto;
+    background-color: #A9A9A9;
+}
+
+header{
+    background-color: #808080;
+    height: 250px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    width: 15%;
+}
+header nav li{
+    display: inline-block;
+}
+nav li a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 35px;
+    padding: 20px 25px;
+    transition: 2s;
+}
+nav li a:hover{
+    color: white;
+    background-color: black;
+    border-radius: 20%;
+    transition: 2s;
+}
+main img{
+    width: 100%;
+}
+main h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px;
+    font-weight: 400;
+}
+main p{
+    width: 80%;
+    margin: auto;
+    line-height: 1.75;
+}
+/* formatacao section cards */
+.cards, .cards-2{
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    background-color: #A9A9A9;
+    padding: 10px;
+    margin: 5px;
+    padding-bottom: 20px;
+}
+.cards article{
+    background-color: #D3D3D3;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+.cards article img{
+    width: 200px;
+}
+.cards-2 article{
+    background-color: #D3D3D3;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 200px;
+}
+.cards-2 h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20pt;
+}
+#item-1{
+    flex-grow: 1;
+    order: 3;
+}
+#item-2{
+    flex-grow: 1;
+    order: 2;
+}
+#item-3{
+    flex-grow: 3;
+    order: 1;
+}
